@@ -1,0 +1,64 @@
+.card {
+  display: inline;
+  float: left;
+  cursor: pointer;
+  min-width: 250px;
+  min-height: 360px;
+  margin: 1rem 2rem;
+  position: relative;
+}
+
+.movieInfo {
+  padding: 0.5rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+.back p {
+  font-size: 0.75rem;
+}
+
+.back Button {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: ease-in-out 700ms;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background: #c4c1c1;
+  transform: rotateY(-180deg);
+  padding: 0 2rem;
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}

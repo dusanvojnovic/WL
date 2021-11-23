@@ -1,0 +1,131 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*
+.modalHeader {
+  width: 100%;
+  padding: 1rem;
+  background: #2a006e;
+  color: white;
+  border-radius: 8px;
+}
+
+.content {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.modal {
+  position: fixed;
+  justify-content: center;
+  left: 5%;
+  width: 30%;
+  top: 12vh;
+  height: 40%;
+  background-color: #e8f6ef;
+  color: #4c4c6d;
+  margin: 8rem 36rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 400ms ease-out forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .modal {
+    width: 75%;
+    height: 70vh;
+    left: calc(62% - 48rem);
+  }
+  .content {
+    font-size: 110%;
+    padding: 6%;
+  }
+}
+
+@media (max-width: 430px) and (min-height: 480px) and (max-height: 900px) {
+  .modal {
+    width: 80%;
+    top: 0;
+  }
+  .content {
+    font-size: 105%;
+    padding: 6%;
+  }
+}
+
+@media (max-width: 320px) and (min-height: 480px) and (max-height: 568px) {
+  .modal {
+    width: 80%;
+    left: calc(60% - 45.5rem);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .content {
+    font-size: 85%;
+    padding: 1%;
+  }
+} */
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 35%;
+  width: 25%;
+  height: 30%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.modal-header {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  background: #222831;
+  color: white;
+  border-radius: 7px 7px 0 0;
+}
+
+.modal-header h2 {
+  margin: 0.2rem;
+}
+
+.modal-content {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.modal-footer {
+  bottom: 5%;
+  left: 35%;
+  display: block;
+  position: absolute;
+  width: 30%;
+}
+
+.modal-footer Button {
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px;
+}

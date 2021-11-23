@@ -1,0 +1,106 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #222831;
+  display: flex;
+  padding: 0 2%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.2rem;
+  height: 1.5rem;
+  background-color: transparent;
+}
+
+.toggleButton .bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f05454;
+}
+
+.brand {
+  text-decoration: none;
+  color: #f05454;
+  font-size: 1.7rem;
+}
+
+.navigation {
+  height: 100%;
+}
+
+.navigation {
+  flex-direction: row;
+  width: 100%;
+}
+
+.navigation ul,
+.hidden ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li,
+.hidden li {
+  list-style: none;
+}
+
+.navigationLink h3:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.brand:hover {
+  color: white;
+}
+
+.navigationLink {
+  text-decoration: none;
+  color: #f05454;
+  display: block;
+  padding: 0.75rem;
+}
+
+@media (max-width: 400px) {
+  .toggleButton {
+    display: flex;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hidden {
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    height: auto;
+    width: 100%;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hidden ul {
+    flex-direction: column;
+  }
+
+  .navigation-hidden ul {
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,27 @@
+.welcomeMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.welcomeMessage .button {
+  text-decoration: none;
+  width: 8.5rem;
+  height: 2.5rem;
+  color: white;
+  background-color: #e03030;
+  margin: 1rem;
+}
+
+.button:hover {
+  background: #222831;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 8rem;
+}
